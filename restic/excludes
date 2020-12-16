@@ -1,0 +1,9 @@
+# HOME
+/home/tatarama/.mozilla/firefox/4cxv9rg2.default/storage
+
+# OS
+/var/run
+/var/cache
+/var/tmp
+/var/log
+/var/lib

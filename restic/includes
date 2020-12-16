@@ -1,0 +1,23 @@
+# HOME
+/home/tatarama/Documents/personal
+/home/tatarama/Pictures
+/home/tatarama/.emacs.d
+/home/tatarama/.config
+/home/tatarama/.zshrc
+/home/tatarama/.tmux*
+/home/tatarama/.bashrc
+/home/tatarama/.profile
+/home/tatarama/.nvidia-settings-rc
+/home/tatarama/.thunderbird
+/home/tatarama/.mozilla
+/home/tatarama/.gnupg
+/home/tatarama/.virtualenvs
+
+# OS
+/etc
+/var
+# /usr
+
+# DATA
+/data/tatarama/data
+/data/tatarama/documents
