@@ -103,7 +103,7 @@ alias zshconfig="emacs -nw -q ~/.zshrc"
 alias ohmyzsh="emacs -nw -q ~/.oh-my-zsh"
 alias cluster='ssh -X biorobcn-gw'
 alias cluster-dev='ssh -t bioroblinux exec "ssh biorobcn2-dev"'
-alias blender-python='/data/tatarama/softwares/install/blender-2.90.0-linux64/2.90/python/bin/python3.7m'
+alias blender-python='/data/tatarama/softwares/install/blender-2.91.0-linux64/2.91/python/bin/python3.7m'
 alias editor='emacs -nw -q'
 alias rpi='ssh pi@172.22.22.76'
 
@@ -119,6 +119,7 @@ export NRP=/data/tatarama/projects/nrp
 export FARMS_MODEL_PATH=/home/tatarama/.farms/models
 export PATH=$PATH:/data/tatarama/softwares/install/opensim/bin
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/data/tatarama/softwares/install/simbody/lib/
+export VISUAL="emacs -nw -q"
 
 # VIRTUALENV WRAPPER
 export WORKON_HOME=$HOME/.virtualenvs
