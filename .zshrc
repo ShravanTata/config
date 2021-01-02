@@ -120,6 +120,7 @@ export FARMS_MODEL_PATH=/home/tatarama/.farms/models
 export PATH=$PATH:/data/tatarama/softwares/install/opensim/bin
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/data/tatarama/softwares/install/simbody/lib/
 export VISUAL="emacs -nw -q"
+export EDITOR="emacs -nw -q"
 
 # VIRTUALENV WRAPPER
 export WORKON_HOME=$HOME/.virtualenvs
