@@ -7,3 +7,10 @@
 /var/tmp
 /var/log
 /var/lib
+/var/spool
+/etc/chatscripts
+/etc/cups/ssl
+/etc/gitlab-runner
+/etc/polkit-1
+/etc/ppp/peers
+/etc/ssl/
