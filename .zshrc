@@ -96,7 +96,7 @@ source $ZSH/oh-my-zsh.sh
 #
 
 #: WELCOME PROMPT
-figlet Tata! 
+figlet Tata!
 
 # aliases
 alias zshconfig="emacs -nw -q ~/.zshrc"
@@ -115,12 +115,17 @@ export FARMS=/data/tatarama/projects/farms
 export SUBMISSIONS=/data/tatarama/projects/submissions
 export COLLABORATIONS=/data/tatarama/projects/collaborations
 export PROJECTS=/data/tatarama/projects
+export FORK=/data/tatarama/fork
 export NRP=/data/tatarama/projects/nrp
 export FARMS_MODEL_PATH=/home/tatarama/.farms/models
 export PATH=$PATH:/data/tatarama/softwares/install/opensim/bin
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/data/tatarama/softwares/install/simbody/lib/
 export VISUAL="emacs -nw -q"
 export EDITOR="emacs -nw -q"
+export PYENV_ROOT=/data/tatarama/softwares/install/pyenv/
+export PATH=$PYENV_ROOT/bin:$PATH
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
 
 # VIRTUALENV WRAPPER
 export WORKON_HOME=$HOME/.virtualenvs
