@@ -13,6 +13,7 @@
 /home/tatarama/.mozilla
 /home/tatarama/.gnupg
 /home/tatarama/.virtualenvs
+/home/tatarama/.ssh
 
 # OS
 /etc
