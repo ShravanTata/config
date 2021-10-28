@@ -109,23 +109,25 @@ alias rpi='ssh pi@172.22.22.76'
 
 # ENV variables
 # Update PATH for .local/bin
+export PYENV_ROOT=/data/tatarama/softwares/install/pyenv/
 export PATH=$PATH:~/.local/bin
 export PATH=$PATH:/data/tatarama/softwares/install/julia-1.5.2/bin
-export FARMS=/data/tatarama/projects/farms
+export PATH=$PATH:/data/tatarama/softwares/install/opensim/bin
+export PATH=$PYENV_ROOT/bin:$PATH
 export SUBMISSIONS=/data/tatarama/projects/submissions
 export COLLABORATIONS=/data/tatarama/projects/collaborations
 export PROJECTS=/data/tatarama/projects
+export FARMS=/data/tatarama/projects/farms
 export FORK=/data/tatarama/fork
-export NRP=/data/tatarama/projects/nrp
+export NMF=$COLLABORATIONS/NeuroMechFly
 export FARMS_MODEL_PATH=/home/tatarama/.farms/models
-export PATH=$PATH:/data/tatarama/softwares/install/opensim/bin
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/data/tatarama/softwares/install/simbody/lib/
 export VISUAL="emacs -nw -q"
 export EDITOR="emacs -nw -q"
-export PYENV_ROOT=/data/tatarama/softwares/install/pyenv/
-export PATH=$PYENV_ROOT/bin:$PATH
 eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
+
+# LIBRARY PATH
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/data/tatarama/softwares/install/simbody/lib/
 
 # VIRTUALENV WRAPPER
 export WORKON_HOME=$HOME/.virtualenvs
