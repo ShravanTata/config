@@ -121,6 +121,7 @@ export FARMS=/data/tatarama/projects/farms
 export FORK=/data/tatarama/fork
 export NMF=$COLLABORATIONS/NeuroMechFly
 export FARMS_MODEL_PATH=/home/tatarama/.farms/models
+export MJLIB_PATH=/data/tatarama/softwares/install/mujoco210/bin/libmujoco210.so
 export VISUAL="emacs -nw -q"
 export EDITOR="emacs -nw -q"
 eval "$(pyenv init --path)"
