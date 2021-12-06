@@ -103,7 +103,6 @@ alias zshconfig="emacs -nw -q ~/.zshrc"
 alias ohmyzsh="emacs -nw -q ~/.oh-my-zsh"
 alias cluster='ssh -X biorobcn-gw'
 alias cluster-dev='ssh -t bioroblinux exec "ssh biorobcn2-dev"'
-alias blender-python='/data/tatarama/softwares/install/blender-2.91.0-linux64/2.91/python/bin/python3.7m'
 alias editor='emacs -nw -q'
 alias rpi='ssh pi@172.22.22.76'
 
@@ -114,24 +113,30 @@ export PATH=$PATH:~/.local/bin
 export PATH=$PATH:/data/tatarama/softwares/install/julia-1.5.2/bin
 export PATH=$PATH:/data/tatarama/softwares/install/opensim/bin
 export PATH=$PYENV_ROOT/bin:$PATH
-export SUBMISSIONS=/data/tatarama/projects/submissions
-export COLLABORATIONS=/data/tatarama/projects/collaborations
 export PROJECTS=/data/tatarama/projects
-export FARMS=/data/tatarama/projects/farms
 export FORK=/data/tatarama/fork
+export SUBMISSIONS=$PROJECTS/submissions
+export COLLABORATIONS=$PROJECTS/collaborations
+export FARMS=$PROJECTS/farms
+export THESIS=$SUBMISSIONS/phd_thesis
 export NMF=$COLLABORATIONS/NeuroMechFly
+export FARMS_SRC=/data/tatarama/projects/farms
 export FARMS_MODEL_PATH=/home/tatarama/.farms/models
 export MJLIB_PATH=/data/tatarama/softwares/install/mujoco210/bin/libmujoco210.so
 export VISUAL="emacs -nw -q"
 export EDITOR="emacs -nw -q"
-eval "$(pyenv init --path)"
-eval "$(pyenv init -)"
 
 # LIBRARY PATH
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/data/tatarama/softwares/install/simbody/lib/
 
+# PYENV
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+
 # VIRTUALENV WRAPPER
+export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=/data/tatarama/venvs
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3.7
-source $HOME/.local/bin/virtualenvwrapper.sh
+pyenv virtualenvwrapper_lazy
+# export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3.7
+# source $HOME/.local/bin/virtualenvwrapper.sh
