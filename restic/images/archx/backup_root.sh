@@ -5,7 +5,7 @@ export RESTIC_PASSWORD="LinuxBackup"
 
 echo $(date) "************************* Initiating backup *************************"
 
-/home/restic/bin/restic backup /boot --exclude-file=/home/restic/config/restic/images/archx/excludes_root -vvv
+/home/restic/bin/restic backup / --exclude-file=/home/restic/config/restic/images/archx/excludes_root -vvv
 
 # restic backup --files-from /home/tatarama/.config/restic/includes --exclude-file=/home/tatarama/.config/restic/excludes
 
