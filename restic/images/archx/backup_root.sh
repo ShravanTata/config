@@ -5,7 +5,7 @@ echo "# Initiating Backup #"
 echo $(date)
 echo "#####################"
 
-sudo -u tatarama /home/tatarama/.local/bin/restic-notify.sh "RESTIC" "Performing backup for root" --icon=dialog-information --expire-time=1
+sudo -u tatarama /home/tatarama/.local/bin/restic-notify.sh "RESTIC" "Performing backup for root" --icon=dialog-information
 
 # export env variables
 export RESTIC_REPOSITORY="sftp:synology-nas:/home/backups/archx/root"
@@ -38,9 +38,12 @@ else
     exit
 fi
 
-/home/restic/bin/restic backup --tag archx --tag root / --exclude-file=/home/restic/config/restic/images/archx/excludes_root -vvv
-
+# run backup
+/home/restic/bin/restic backup --tag archx --tag root / --exclude-file=/home/restic/config/restic/images/archx/excludes_root --verbose
+# run pruning
 /home/restic/bin/restic forget --prune --keep-hourly 6 --keep-daily 7 --keep-weekly 4 --keep-monthly 12
+# run checks
+/home/restic/bin/restic check
 
 sudo -u tatarama /home/tatarama/.local/bin/restic-notify.sh "RESTIC" "root backup finished." --icon=dialog-information
 
