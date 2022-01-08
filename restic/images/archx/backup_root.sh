@@ -17,9 +17,10 @@ sleep 1
 if [ $? -eq 0 ];
 then
     echo " "
-    echo "[ERROR] Restic respository unavailable for backup ... ";
+    echo "Restic respository available, continuing with the backup ... ";
     echo " "
 else
+    echo "[ERROR] Restic respository unavailable, exiting backup ... ";
     sudo -u tatarama /home/tatarama/.local/bin/restic-notify.sh "Restic root backup failed. Check logs" --icon=dialog-error
     exit
 fi
