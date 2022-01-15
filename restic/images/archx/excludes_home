@@ -54,7 +54,7 @@ build
 *.toc
 *.suppinfo
 *.synctex.gz
-*~
+*.*~
 ##########
 # restic #
 ##########
