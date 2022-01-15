@@ -9,13 +9,18 @@
 /home/tatarama/Public/
 /home/tatarama/Templates/
 /home/tatarama/Videos/
-# User added directoryies
+# User added directories
 /home/tatarama/fork
 /home/tatarama/softwares
 /home/tatarama/texmf
 /home/tatarama/wall
 /home/tatarama/Zotero
-/home/tatarama/projects
+/home/tatarama/projects/work/phd/cmc
+/home/tatarama/projects/work/phd/collaborations/NeuroMechFly-dev
+/home/tatarama/projects/work/phd/collaborations/NeuroMechFly
+/home/tatarama/projects/personal/edits
+/home/tatarama/projects/personal/scratch
+/home/tatarama/projects/work/docker
 # .dot folders
 /home/tatarama/.cache
 /home/tatarama/.mozilla
@@ -27,6 +32,8 @@
 /home/tatarama/.zotero
 /home/tatarama/.erc
 /home/tatarama/.ipython
+/home/tatarama/.local/share/baloo
+/home/tatarama/.local/share/virtualenv
 # auto-generated directories
 auto/
 *.DS_*
