@@ -39,7 +39,7 @@ else
 fi
 
 # run backup for tatarama and restic
-/home/restic/bin/restic backup --tag archx --tag home --tag archx /home/ --exclude-file=/home/restic/config/restic/images/archx/excludes_home  --files-from=/home/restic/config/restic/images/archx/includes_home --exclude-larger-than 100M --verbose
+/home/restic/bin/restic backup --tag archx --tag home --tag archx /home/ --exclude-file=/home/restic/config/restic/images/archx/excludes_home --exclude-larger-than 100M --verbose
 # run pruning
 /home/restic/bin/restic forget --prune --keep-hourly 6 --keep-daily 7 --keep-weekly 4 --keep-monthly 12
 # run checks
