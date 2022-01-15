@@ -1,12 +1,53 @@
-/dev/*
-/proc/*
-/sys/*
-/tmp/*
-/run/*
-/mnt/*
-/media/*
-/data
-/lost+found
-/var/tmp
-# Home is mounted on a different partition and will be backed up separately
-/home
+############
+# tatarama #
+############
+# Default directories (keep the empty directory)
+/home/tatarama/Desktop/
+/home/tatarama/Downloads/
+/home/tatarama/Music/
+/home/tatarama/Pictures/
+/home/tatarama/Public/
+/home/tatarama/Templates/
+/home/tatarama/Videos/
+# User added directoryies
+/home/tatarama/fork
+/home/tatarama/softwares
+/home/tatarama/texmf
+/home/tatarama/wall
+/home/tatarama/Zotero
+/home/tatarama/projects
+# .dot folders
+/home/tatarama/.cache
+/home/tatarama/.mozilla
+/home/tatarama/.mujoco
+/home/tatarama/.emacs.d
+/home/tatarama/.zoom
+/home/tatarama/.virtualenvs
+/home/tatarama/.thunderbird
+/home/tatarama/.zotero
+/home/tatarama/.erc
+/home/tatarama/.ipython
+# auto-generated directories
+auto/
+*.DS_*
+**.DS_Store
+*DS_Store
+temp*
+__pycache__
+.mypy_cache
+build
+# auto-generated file/filetypes
+*.aux
+*.bbl
+*.blg
+*.lot
+*.lof
+*.log
+*.synctex.gz
+*.toc
+*.suppinfo
+*.synctex.gz
+*~
+##########
+# restic #
+##########
