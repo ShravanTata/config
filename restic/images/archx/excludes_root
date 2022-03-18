@@ -8,5 +8,6 @@
 /data
 /lost+found
 /var/tmp
+/var/cache
 # Home is mounted on a different partition and will be backed up separately
 /home
