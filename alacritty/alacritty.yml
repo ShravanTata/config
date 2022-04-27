@@ -123,15 +123,15 @@ font:
     style: Regular
 
   # bold font face
-  # bold:
-    # Font family
+  bold:
+    # font family
 
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    # family: JetBrains ExtraBold
+    family: JetBrains Mono
 
-    # The `style` can be specified to pick a specific face.
-    # style: Regular
+    # the `style` can be specified to pick a specific face.
+    style: Extra Bold
 
   # italic font face
   #italic:
