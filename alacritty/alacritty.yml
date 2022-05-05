@@ -109,7 +109,7 @@ window:
 
 font:
   # normal (roman) font face
-  size: 6.0
+  size: 11.0
   normal:
     # font family
     #
@@ -727,7 +727,13 @@ shell:
 #
 # If the same trigger is assigned to multiple actions, all of them are executed
 # in the order they were defined in.
-#key_bindings:
+key_bindings:
+  # https://godoc.org/github.com/tiborvass/uniline/ansi#Code
+  # https://github.com/jwilm/alacritty/issues/93#issuecomment-334790547
+  - { key: F,  mods: Alt,           chars: "\x1bf"                       }
+  - { key: B,  mods: Alt,           chars: "\x1bb"                       }
+  # https://github.com/jwilm/alacritty/issues/93#issuecomment-427592040
+  - { key: D,  mods: Alt,           chars: "\x1bd"                       }
   #- { key: Paste,                                       action: Paste          }
   #- { key: Copy,                                        action: Copy           }
   #- { key: L,         mods: Control,                    action: ClearLogNotice }
