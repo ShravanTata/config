@@ -109,7 +109,7 @@ window:
 
 font:
   # normal (roman) font face
-  size: 11.0
+  size: 8.0
   normal:
     # font family
     #
