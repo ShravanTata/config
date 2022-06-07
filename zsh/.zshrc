@@ -119,6 +119,7 @@ export PERSONAL=$PROJECTS/personal
 export FORK=$HOME/fork
 export SUBMISSIONS=$PHD/submissions
 export COLLABORATIONS=$PHD/collaborations
+export RESEARCH=$PHD/research
 export FARMS=$PHD/farms
 export THESIS=$PHD/phd_thesis
 export NMF=$COLLABORATIONS/NeuroMechFly
