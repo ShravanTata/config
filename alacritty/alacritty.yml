@@ -75,7 +75,7 @@ window:
   startup_mode: Maximized
 
   # Window title
-  title: ArchX
+  title: waveparticle
 
   # Allow terminal applications to change Alacritty's window title.
   #dynamic_title: true
@@ -109,7 +109,7 @@ window:
 
 font:
   # normal (roman) font face
-  size: 8.0
+  size: 11.0
   normal:
     # font family
     #
@@ -427,8 +427,8 @@ cursor:
 #   - (macOS) /bin/bash --login
 #   - (Linux/BSD) user login shell
 #   - (Windows) powershell
-shell:
- program: /bin/zsh
+# shell:
+#  program: /bin/zsh
 #  args:
 #    - --login
 
