@@ -125,8 +125,9 @@ export THESIS=$PHD/phd_thesis
 export NMF=$COLLABORATIONS/NeuroMechFly
 export FARMS_SRC=$FARMS
 export FARMS_MODEL_PATH=/home/tatarama/.farms/models
-export MJLIB_PATH=$HOME/softwares/install/mujoco-2.1.1/lib/libmujoco.so
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/softwares/install/mujoco-2.1.1/lib/
+export MUJOCO_PATH=$HOME/softwares/install/mujoco
+export MJLIB_PATH=$MUJOCO_PATH/lib/libmujoco.so
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$MUJOCO_PATH/lib/
 export VISUAL="emacs -nw -q"
 export EDITOR="emacs -nw -q"
 
