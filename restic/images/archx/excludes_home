@@ -10,11 +10,11 @@
 /home/tatarama/Templates/
 /home/tatarama/Videos/
 # User added directories
-/home/tatarama/data
+# /home/tatarama/data
 /home/tatarama/fork
 # /home/tatarama/softwares
 /home/tatarama/texmf
-/home/tatarama/wall
+# /home/tatarama/wall
 /home/tatarama/Zotero
 /home/tatarama/projects/work/phd/cmc
 /home/tatarama/projects/work/phd/collaborations/NeuroMechFly-dev
@@ -37,6 +37,7 @@
 /home/tatarama/.ipython
 /home/tatarama/.local/share/baloo
 /home/tatarama/.local/share/virtualenv
+/home/tatarama/.local/share/Trash
 # auto-generated directories
 auto/
 *.DS_*
