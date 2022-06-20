@@ -93,28 +93,26 @@ fi
 alias editor='emacs -nw -q'
 alias zshconfig="editor ~/.zshrc"
 alias ohmyzsh="editor ~/.oh-my-zsh"
-alias epflvpn_con="sudo openconnect -b vpn.epfl.ch"
-alias epflvpn_discon="sudo pkill openconnect"
+
 alias cluster='ssh -X biorobcn-gw'
 alias cluster-dev='ssh -t bioroblinux exec "ssh biorobcn2-dev"'
 
 # ENV variables
-export PYTHONPATH=$PYTHONPATH:$HOME/.local/lib/python3.10/site-packages
 export PATH=$PATH:~/.local/bin
 export PROJECTS=$HOME/projects
 export WORK=$PROJECTS/work
-export PHD=$PROJECTS/work/phd
 export PERSONAL=$PROJECTS/personal
 export FORK=$HOME/fork
-export SUBMISSIONS=$PHD/submissions
-export COLLABORATIONS=$PHD/collaborations
-export RESEARCH=$PHD/research
-export FARMS=$PHD/farms
-export THESIS=$PHD/phd_thesis
+export SOFTWARES=$HOME/softwares
+export SUBMISSIONS=$WORK/submissions
+export COLLABORATIONS=$WORK/collaborations
+export RESEARCH=$WORK/research
+export FARMS=$WORK/farms
+export THESIS=$WORK/phd_thesis
 export NMF=$COLLABORATIONS/NeuroMechFly
 export FARMS_SRC=$FARMS
-export FARMS_MODEL_PATH=/home/tatarama/.farms/models
-export MUJOCO_PATH=$HOME/softwares/install/mujoco
+export FARMS_MODEL_PATH=$HOME/.farms/models
+export MUJOCO_PATH=$SOFTWARES/install/mujoco
 export MJLIB_PATH=$MUJOCO_PATH/lib/libmujoco.so
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$MUJOCO_PATH/lib/
 export VISUAL="emacs -nw -q"
@@ -128,4 +126,6 @@ eval "$(pyenv init -)"
 export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/venvs
+# "$(pyenv version-name)"
+export PATH=$PATH:$PYENV_ROOT/versions/3.10.0/bin
 pyenv virtualenvwrapper_lazy
