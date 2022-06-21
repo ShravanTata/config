@@ -1,4 +1,4 @@
- #!/bin/bash
+#!/usr/bin/env bash
 
 echo "#####################"
 echo "# Initiating Backup #"
@@ -8,7 +8,7 @@ echo "#####################"
 notify "Performing backup for M1X22"
 
 # export env variables
-export RESTIC_REPOSITORY="sftp:synology-nas:/home/backups/mac/m1x22"
+export RESTIC_REPOSITORY="sftp:synology-nas-local:/home/backups/mac/m1x22"
 export RESTIC_PASSWORD="MacOSBackup"
 
 # check if restic repository is initialized well
@@ -26,8 +26,7 @@ else
 fi
 
 # run backup
-restic backup --tag pro2014 --tag personal $HOME/projects/personal/config --verbose
-# --exclude-file=$HOME/projects/personal/config/restic/mac/m1x22/excludes
+restic backup --tag pro2014 --tag personal $HOME --verbose --exclude-file=$HOME/.config/restic/excludes
 # run pruning
 restic forget --prune --keep-hourly 6 --keep-daily 7 --keep-weekly 4 --keep-monthly 12
 # run checks

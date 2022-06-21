@@ -1,0 +1,23 @@
+$HOME/**/*
+!$HOME/projects
+# auto-generated directories
+auto/
+*.DS_*
+**.DS_Store
+*DS_Store
+temp*
+__pycache__
+.mypy_cache
+build
+# auto-generated file/filetypes
+*.aux
+*.bbl
+*.blg
+*.lot
+*.lof
+*.log
+*.synctex.gz
+*.toc
+*.suppinfo
+*.synctex.gz
+*.*~
