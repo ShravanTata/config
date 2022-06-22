@@ -32,6 +32,9 @@
 # toggle window split type
 # alt - e : yabai -m window --toggle split
 
+# balances all windows to have same space
+shift + cmd - b :  yabai -m space --balance
+
 # balance size of windows
 shift + cmd - 0 : yabai -m space --balance
 
