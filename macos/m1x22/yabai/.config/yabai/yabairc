@@ -48,6 +48,7 @@ yabai -m config --space 2 layout             float
 yabai -m rule --add app="^System Preferences$" manage=off
 yabai -m rule --add app="^Firefox$" manage=off
 yabai -m rule --add app="^Zotero$" manage=off
+yabai -m rule --add app="^Finder" manage=off
 
 # show digital colour meter topmost and on all spaces
 yabai -m rule --add app="^Digital Colou?r Meter$" sticky=on
