@@ -33,7 +33,7 @@
 # alt - e : yabai -m window --toggle split
 
 # balance size of windows
-shift + cmd - 0 : yabai -m space --balance
+shift + cmd - b : yabai -m space --balance
 
 # change focus
 cmd - 1 : yabai -m space --focus 1
