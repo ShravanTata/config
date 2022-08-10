@@ -119,13 +119,11 @@ export VISUAL="emacs -nw -q"
 export EDITOR="emacs -nw -q"
 
 # PYENV
-eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
 
 # VIRTUALENV WRAPPER
 export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/venvs
-# "$(pyenv version-name)"
-export PATH=$PATH:$PYENV_ROOT/versions/3.10.0/bin
-pyenv virtualenvwrapper_lazy
+export PATH=$PATH:$PYENV_ROOT/versions/$(pyenv version-name)/bin
+pyenv virtualenvwrapper
