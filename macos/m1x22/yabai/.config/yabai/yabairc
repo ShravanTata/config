@@ -53,7 +53,7 @@ yabai -m space 5 --label misc
 yabai -m space 6 --label extra
 
 # float system preferences
-yabai -m rule --add app="^Emacs$" manage=on
+yabai -m rule --add app="^Emacs$" manage=off
 yabai -m rule --add app="^System Preferences$" manage=off
 yabai -m rule --add app="^Firefox$" manage=off
 yabai -m rule --add app="^Zotero$" manage=off
