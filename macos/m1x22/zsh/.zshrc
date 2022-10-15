@@ -118,6 +118,9 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$MUJOCO_PATH/lib/
 export VISUAL="emacs -nw -q"
 export EDITOR="emacs -nw -q"
 
+# TEMP PROJECT ENV VARIABLES
+export CURRPROJ=$RESEARCH/neuromechanics/quadruped/mice/abstract_control/code/
+
 # PYENV
 eval "$(pyenv init -)"
 
