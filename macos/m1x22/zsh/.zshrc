@@ -119,7 +119,7 @@ export VISUAL="emacs -nw -q"
 export EDITOR="emacs -nw -q"
 
 # TEMP PROJECT ENV VARIABLES
-export CURRPROJ=$RESEARCH/neuromechanics/quadruped/mice/abstract_control/code/
+export CURRPROJ=$RESEARCH/neuromechanics/quadruped/mice/abstract_control/src/
 
 # PYENV
 eval "$(pyenv init -)"
