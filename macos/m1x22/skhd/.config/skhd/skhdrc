@@ -42,6 +42,7 @@ cmd - 3 : yabai -m space --focus 3
 cmd - 4 : yabai -m space --focus 4
 cmd - 5 : yabai -m space --focus 5
 cmd - 6 : yabai -m space --focus 6
+cmd - 7 : yabai -m space --focus 7
 
 # move window and focus desktop
 # shift + alt - 1 : yabai -m window --space 1; yabai -m space --focus 1
