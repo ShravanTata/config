@@ -1,5 +1,5 @@
+# Exclude everything
 $HOME/**/*
-!$HOME/projects
 # auto-generated directories
 auto/
 *.DS_*
@@ -21,3 +21,5 @@ build
 *.suppinfo
 *.synctex.gz
 *.*~
+# Don't exclude projects
+!$HOME/projects
