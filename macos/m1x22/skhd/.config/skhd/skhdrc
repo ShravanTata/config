@@ -64,6 +64,9 @@ shift + alt - n : yabai -m space --create && \
 # fast focus desktop
 alt - 0 : yabai -m space --focus recent
 
+# sticky window
+alt - s : yabai -m window --toggle sticky --toggle topmost
+
 # fullscreen window
 # options: zoom-parent, zoom-fullscreen, native-fullscreen
 shift + cmd - t : yabai -m window --toggle zoom-fullscreen
