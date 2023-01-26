@@ -117,6 +117,8 @@ export MJLIB_PATH=$MUJOCO_PATH/lib/libmujoco.so
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$MUJOCO_PATH/lib/
 export VISUAL="emacs -nw -q"
 export EDITOR="emacs -nw -q"
+# required for plots to stay in macosx
+export MPLBACKEND=QtAgg
 
 # TEMP PROJECT ENV VARIABLES
 export MOUSEPROJ=$RESEARCH/neuromechanics/quadruped/mice/abstract_control/src/
