@@ -75,6 +75,8 @@ yabai -m rule --add app="^Zotero$" manage=off
 yabai -m rule --add app="^Finder" manage=off
 # yabai -m rule --add app="^Preview" manage=off
 yabai -m rule --add app="^VLC" manage=off
+yabai -m rule --add app="^Python" manage=off
+yabai -m rule --add app="^Blender" manage=off
 # yabai -m rule --add app="^Keynote" manage=off
 # yabai -m rule --add app="^Photos" manage=off
 
