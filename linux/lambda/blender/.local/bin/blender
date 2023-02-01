@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+source /$HOME/.virtualenvs/mouse/bin/activate
+echo "Activated farms virtualenv"
+PYTHONPATH=$(python -c "import sys;print(':'.join(sys.path))") /home/shravan/softwares/install/blender-3.4.1-linux-x64/blender --python-use-system-env $@
