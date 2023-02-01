@@ -106,6 +106,7 @@ export FORK=$HOME/fork
 export SOFTWARES=$HOME/softwares
 export SUBMISSIONS=$WORK/submissions
 export COLLABORATIONS=$WORK/collaborations
+export LAB=$WORK/dannerlab
 export RESEARCH=$WORK/research
 export FARMS=$WORK/farms
 export THESIS=$WORK/phd_thesis
