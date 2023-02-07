@@ -1,0 +1,9 @@
+# Global gitignore. Use wisely and with caution!!!
+# Be specific than generic
+# Comment what the files represent
+
+# https://sebastiandedeyne.com/setting-up-a-global-gitignore-file/
+# git config --global core.excludesfile ~/.config/git/.gitignore
+
+# EMACS undo files
+*.~undo-tree~
