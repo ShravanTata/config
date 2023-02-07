@@ -7,3 +7,6 @@
 
 # EMACS undo files
 *.~undo-tree~
+
+# Mac files
+.DS_Store
