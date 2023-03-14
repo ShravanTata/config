@@ -122,7 +122,7 @@ export EDITOR="emacs -nw -q"
 export MPLBACKEND=QtAgg
 
 # TEMP PROJECT ENV VARIABLES
-export MOUSEPROJ=$RESEARCH/neuromechanics/quadruped/mice/abstract_control/src/
+export MOUSEPROJ=$RESEARCH/neuromechanics/quadruped/mice/abstract_control/
 export CATPROJ=$RESEARCH/neuromechanics/quadruped/cat/prototype
 
 # PYENV
