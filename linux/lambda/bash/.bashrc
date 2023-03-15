@@ -255,5 +255,6 @@ export RESEARCH=$PROJECTS/research
 export FARMS=$PROJECTS/farms
 export FARMS_SRC=$FARMS
 export FARMS_MODEL_PATH=$HOME/.farms/models
+export MUJOCO_GL=egl
 export VISUAL="emacs -nw -q"
 export EDITOR="emacs -nw -q"
