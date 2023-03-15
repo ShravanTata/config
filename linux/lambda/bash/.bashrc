@@ -233,6 +233,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# SSH
+[ -z "$SSH_AUTH_SOCK" ] && eval "$(ssh-agent -s)"
+
 # PYENV : configuration
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
