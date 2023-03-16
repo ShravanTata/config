@@ -255,6 +255,7 @@ alias bashconfig="editor ~/.bashrc"
 # ENV variables
 export PROJECTS=$HOME/projects
 export RESEARCH=$PROJECTS/research
+export MOUSEPROJ=$RESEARCH/neuromechanics/quadruped/mice/abstract_control/
 export FARMS=$PROJECTS/farms
 export FARMS_SRC=$FARMS
 export FARMS_MODEL_PATH=$HOME/.farms/models
