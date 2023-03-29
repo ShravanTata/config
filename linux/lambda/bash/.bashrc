@@ -233,6 +233,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# SSH
+[ -z "$SSH_AUTH_SOCK" ] && eval "$(ssh-agent -s)"
+
 # PYENV : configuration
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
@@ -252,6 +255,7 @@ alias bashconfig="editor ~/.bashrc"
 # ENV variables
 export PROJECTS=$HOME/projects
 export RESEARCH=$PROJECTS/research
+export MOUSEPROJ=$RESEARCH/neuromechanics/quadruped/mice/abstract_control/
 export FARMS=$PROJECTS/farms
 export FARMS_SRC=$FARMS
 export FARMS_MODEL_PATH=$HOME/.farms/models
