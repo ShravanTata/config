@@ -116,8 +116,8 @@ export FARMS_MODEL_PATH=$HOME/.farms/models
 export MUJOCO_PATH=$SOFTWARES/install/mujoco
 export MJLIB_PATH=$MUJOCO_PATH/lib/libmujoco.so
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$MUJOCO_PATH/lib/
-export VISUAL="emacs -nw -q"
 export EDITOR="emacs -nw -q"
+export VISUAL=$EDITOR
 # required for plots to stay in macosx
 export MPLBACKEND=QtAgg
 
