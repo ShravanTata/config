@@ -259,6 +259,7 @@ export MOUSEPROJ=$RESEARCH/neuromechanics/quadruped/mice/abstract_control/
 export FARMS=$PROJECTS/farms
 export FARMS_SRC=$FARMS
 export FARMS_MODEL_PATH=$HOME/.farms/models
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/shravan/softwares/install/pagmo2/lib
 export MUJOCO_GL=egl
 export VISUAL="emacs -nw -q"
 export EDITOR="emacs -nw -q"
