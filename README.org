@@ -1,0 +1,7 @@
+* linux_config
+
+Config files used in my Linux
+
+
+* Resources
+- [[https://gitlab.com/aimebertrand/dotfiles]]
