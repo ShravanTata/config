@@ -5,3 +5,4 @@ Config files used in my Linux
 
 * Resources
 - [[https://gitlab.com/aimebertrand/dotfiles]]
+- https://github.com/FelixKratz/dotfiles
