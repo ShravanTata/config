@@ -122,8 +122,9 @@ export VISUAL=$EDITOR
 export MPLBACKEND=QtAgg
 
 # TEMP PROJECT ENV VARIABLES
-export MOUSEPROJ=$RESEARCH/neuromechanics/quadruped/mice/abstract_control/
+export MOUSEPROJ=$RESEARCH/neuromechanics/quadruped/mice/abstract_control
 export CATPROJ=$RESEARCH/neuromechanics/quadruped/cat/prototype
+export NEURLPROJ=$RESEARCH/neuromechanics/quadruped/robot/neurl
 
 # PYENV
 eval "$(pyenv init -)"
