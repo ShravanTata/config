@@ -135,3 +135,5 @@ export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/venvs
 export PATH=$PATH:$PYENV_ROOT/versions/$(pyenv version-name)/bin
 pyenv virtualenvwrapper
+
+source /Users/tatarama/.docker/init-zsh.sh || true # Added by Docker Desktop
