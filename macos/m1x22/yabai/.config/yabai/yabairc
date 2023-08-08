@@ -71,6 +71,7 @@ yabai -m space 6 --label extra
 yabai -m rule --add app="^Emacs$" manage=off
 yabai -m rule --add app="^System Preferences$" manage=off
 yabai -m rule --add app="^Firefox$" manage=off
+yabai -m rule --add app="^Arc" manage=off
 yabai -m rule --add app="^Zotero$" manage=off
 yabai -m rule --add app="^Finder" manage=off
 # yabai -m rule --add app="^Preview" manage=off
