@@ -18,7 +18,7 @@ sudo visudo -f /private/etc/sudoers.d/yabai
 
 # input the line below into the file you are editing.
 #  replace <yabai> with the path to the yabai binary (output of: which yabai).
-#  replace <user> with your username (output of: whoami). 
+#  replace <user> with your username (output of: whoami).
 #  replace <hash> with the sha256 hash of the yabai binary (output of: shasum -a 256 $(which yabai)).
 #   this hash must be updated manually after running brew upgrade.
 
@@ -32,7 +32,7 @@ yabai -m config mouse_follows_focus          off
 yabai -m config focus_follows_mouse          off
 yabai -m config window_origin_display        default
 yabai -m config window_placement             first_child
-yabai -m config window_topmost               off
+# yabai -m config window_topmost               off
 yabai -m config window_shadow                off
 yabai -m config window_opacity               off
 yabai -m config window_opacity_duration      0.0
@@ -49,6 +49,7 @@ yabai -m config mouse_modifier               fn
 yabai -m config mouse_action1                move
 yabai -m config mouse_action2                resize
 yabai -m config mouse_drop_action            swap
+yabai -m config layer                        above
 
 # general space settings
 yabai -m config layout                       bsp
@@ -68,20 +69,20 @@ yabai -m space 5 --label misc
 yabai -m space 6 --label extra
 
 # float system preferences
-yabai -m rule --add app="^Emacs$" manage=off
-yabai -m rule --add app="^System Preferences$" manage=off
-yabai -m rule --add app="^Firefox$" manage=off
-yabai -m rule --add app="^Arc" manage=off
-yabai -m rule --add app="^Zotero$" manage=off
-yabai -m rule --add app="^Finder" manage=off
-# yabai -m rule --add app="^Preview" manage=off
-yabai -m rule --add app="^VLC" manage=off
-yabai -m rule --add app="^Python" manage=off
-yabai -m rule --add app="^Blender" manage=off
-yabai -m rule --add app="^Inkscape" manage=off
-yabai -m rule --add app="^Keynote" manage=off
-yabai -m rule --add app="^Photos" manage=off
-yabai -m rule --add app="^Teams" manage=off
+yabai -m rule --add app="^Emacs$" manage=off layer=below
+yabai -m rule --add app="^System Preferences$" manage=off layer=below
+yabai -m rule --add app="^Firefox$" manage=off layer=below
+yabai -m rule --add app="^Arc" manage=off layer=below
+yabai -m rule --add app="^Zotero$" manage=off layer=below
+yabai -m rule --add app="^Finder" manage=off layer=below
+# yabai -m rule --add app="^Preview" manage=off layer=below
+yabai -m rule --add app="^VLC" manage=off layer=below
+yabai -m rule --add app="^Python" manage=off layer=below
+yabai -m rule --add app="^Blender" manage=off layer=below
+yabai -m rule --add app="^Inkscape" manage=off layer=below
+yabai -m rule --add app="^Keynote" manage=off layer=below
+yabai -m rule --add app="^Photos" manage=off layer=below
+yabai -m rule --add app="^Teams" manage=off layer=below
 
 # show digital colour meter topmost and on all spaces
 yabai -m rule --add app="^Digital Colou?r Meter$" sticky=on
