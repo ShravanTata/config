@@ -137,3 +137,7 @@ export PATH=$PATH:$PYENV_ROOT/versions/$(pyenv version-name)/bin
 pyenv virtualenvwrapper
 
 source /Users/tatarama/.docker/init-zsh.sh || true # Added by Docker Desktop
+
+# MOJO
+export MODULAR_HOME="/Users/tatarama/.modular"
+export PATH="/Users/tatarama/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
