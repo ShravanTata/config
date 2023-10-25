@@ -131,9 +131,10 @@ eval "$(pyenv init -)"
 
 # VIRTUALENV WRAPPER
 export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
-export WORKON_HOME=$HOME/.virtualenvs
+export WORKON_HOME=$HOME/.virtualenvs/versions/$(pyenv version-name)
 export PROJECT_HOME=$HOME/venvs
 export PATH=$PATH:$PYENV_ROOT/versions/$(pyenv version-name)/bin
+export VIRTUALENVWRAPPER_PYTHON=$(pyenv which python)
 pyenv virtualenvwrapper
 
 source /Users/tatarama/.docker/init-zsh.sh || true # Added by Docker Desktop
