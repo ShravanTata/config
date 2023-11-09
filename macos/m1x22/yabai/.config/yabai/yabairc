@@ -69,10 +69,11 @@ yabai -m space 5 --label misc
 yabai -m space 6 --label extra
 
 # float system preferences
+yabai -m rule --add app=".*" layer=normal
 yabai -m rule --add app="^Emacs$" manage=off layer=below
 yabai -m rule --add app="^System Preferences$" manage=off layer=below
 yabai -m rule --add app="^Firefox$" manage=off layer=below
-yabai -m rule --add app="^Chrome$" manage=off layer=below
+yabai -m rule --add app="^Google Chrome$" manage=off layer=below
 yabai -m rule --add app="^Arc" manage=off layer=below
 yabai -m rule --add app="^Zotero$" manage=off layer=below
 yabai -m rule --add app="^Finder" manage=off layer=normal
