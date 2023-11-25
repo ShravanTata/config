@@ -71,6 +71,7 @@ yabai -m space 6 --label extra
 
 # float system preferences
 yabai -m rule --add app=".*" layer=normal
+yabai -m rule --add app="^Thunderbird$" manage=on
 yabai -m rule --add app="^Emacs$" manage=off layer=below
 yabai -m rule --add app="^System Preferences$" manage=off layer=below
 yabai -m rule --add app="^Firefox$" manage=off layer=below
@@ -87,8 +88,9 @@ yabai -m rule --add app="^Inkscape$" manage=off layer=below
 yabai -m rule --add app="^Keynote$" manage=off layer=below
 yabai -m rule --add app="^Photos$" manage=off layer=below
 yabai -m rule --add app="^Teams$" manage=off layer=below
+# yabai -m rule --add app='^Arc$' title='^Space.*$' manage=off layer=below
 
 # show digital colour meter topmost and on all spaces
-yabai -m rule --add app="^Digital Colou?r Meter$" sticky=on
+yabai -m rule --add app="^Digital Colou?r Meter$" sticky=on layer=above
 
 echo "yabai configuration loaded.."
