@@ -66,8 +66,8 @@ yabai -m space 5 --label misc
 yabai -m space 6 --label extra
 
 # float system preferences
-yabai -m rule --add app=".*" layer=normal
-yabai -m rule --add app="^Thunderbird$" manage=on
+# yabai -m rule --add app=".*" layer=normal
+yabai -m rule --add app="^Thunderbird$" title="^*$" manage=on layer=normal
 yabai -m rule --add app="^Emacs$" manage=off layer=below
 yabai -m rule --add app="^System Preferences$" manage=off layer=below
 yabai -m rule --add app="^Firefox$" manage=off layer=below
