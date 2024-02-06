@@ -94,8 +94,8 @@ alias editor='emacs -nw -q'
 alias zshconfig="editor ~/.zshrc"
 alias ohmyzsh="editor ~/.oh-my-zsh"
 
-alias cluster='ssh -X biorobcn-gw'
-alias cluster-dev='ssh -t bioroblinux exec "ssh biorobcn2-dev"'
+# alias cluster='ssh -X biorobcn-gw'
+# alias cluster-dev='ssh -t bioroblinux exec "ssh biorobcn2-dev"'
 
 # ENV variables
 export PATH=$PATH:~/.local/bin
