@@ -243,10 +243,11 @@ eval "$(pyenv init -)"
 
 # set PYENV-virtualenvwrapper configuration
 export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
-export WORKON_HOME=$HOME/.virtualenvs
+export WORKON_HOME=$HOME/.virtualenvs/versions/$(pyenv version-name)
 export PROJECT_HOME=$HOME/venvs
 export PATH=$PATH:$PYENV_ROOT/versions/$(pyenv version-name)/bin
-pyenv virtualenvwrapper_lazy
+export VIRTUALENVWRAPPER_PYTHON=$(pyenv which python)
+pyenv virtualenvwrapper
 
 # aliases
 alias editor='emacs -nw -q'
