@@ -1,0 +1,3 @@
+[submodule "macos/m1x22/tmux"]
+	path = macos/m1x22/tmux
+	url = git@github.com:gpakosz/.tmux.git
