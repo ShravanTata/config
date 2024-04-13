@@ -21,5 +21,6 @@ build
 *.suppinfo
 *.synctex.gz
 *.*~
+*.pickle.gzip
 # Don't exclude projects
 !$HOME/projects
