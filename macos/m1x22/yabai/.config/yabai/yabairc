@@ -83,7 +83,7 @@ yabai -m rule --add app="^Blender$" manage=off
 yabai -m rule --add app="^Inkscape$" manage=off
 yabai -m rule --add app="^Keynote$" manage=off
 yabai -m rule --add app="^Photos$" manage=off
-yabai -m rule --add app="^Teams$" manage=off
+yabai -m rule --add app="^python$" title="^*$" manage=off
 # yabai -m rule --add app='^Arc$' title='^*$' manage=off
 
 # show digital colour meter topmost and on all spaces
