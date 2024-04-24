@@ -69,7 +69,7 @@ yabai -m space 6 --label extra
 yabai -m rule --add app=".*" layer=normal
 yabai -m rule --add app="^Thunderbird$" manage=on
 yabai -m rule --add app="^Emacs$" manage=off
-yabai -m rule --add app="^System Preferences$" manage=off
+yabai -m rule --add app="^System Settings$" manage=off
 yabai -m rule --add app="^Firefox$" manage=off
 yabai -m rule --add app="^Google Chrome$" manage=off
 yabai -m rule --add app="^Arc$" manage=off
