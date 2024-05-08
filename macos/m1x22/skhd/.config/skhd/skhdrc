@@ -67,8 +67,8 @@ shift + alt - n : yabai -m space --create && \
 alt - 0 : yabai -m space --focus recent
 
 # sticky window
-alt - s : yabai -m window --toggle sticky --toggle topmost --layer above
-shift + alt - s : yabai -m window --toggle sticky --toggle topmost --layer auto
+alt - s : yabai -m window --toggle sticky --toggle topmost --sub-layer above
+shift + alt - s : yabai -m window --toggle sticky --toggle topmost --sub-layer auto
 
 # fullscreen window
 # options: zoom-parent, zoom-fullscreen, native-fullscreen
