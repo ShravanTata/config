@@ -122,7 +122,10 @@ export VISUAL=$EDITOR
 export MPLBACKEND=QtAgg
 
 # TEMP PROJECT ENV VARIABLES
-export MOUSEPROJ=$RESEARCH/neuromechanics/quadruped/mice/mouse-locomotion
+export MOUSEPROJS=$RESEARCH/neuromechanics/quadruped/mice/
+export MOUSE_LOCOMOTION=$RESEARCH/neuromechanics/quadruped/mice/mouse-locomotion
+export MOUSE_V3_STANDING=$RESEARCH/neuromechanics/quadruped/mice/mouse-v3-standing
+export MOUSE_V3_ANALYSIS=$RESEARCH/neuromechanics/quadruped/mice/mouse-v3-analysis
 export CATPROJ=$RESEARCH/neuromechanics/quadruped/cat/cat_locomotion
 export NEURLPROJ=$RESEARCH/neuromechanics/quadruped/robot/neurl
 
