@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-source /$HOME/.virtualenvs/farms/bin/activate
+source $HOME/.virtualenvs/versions/$PYENV_VIRTUALENVWRAPPER_PYENV_VERSION/farms/bin/activate
 echo "Activated farms virtualenv"
 PYTHONPATH=$(python -c "import sys;print(':'.join(sys.path))") /Applications/Blender.app/Contents/MacOS/Blender --python-use-system-env $@
