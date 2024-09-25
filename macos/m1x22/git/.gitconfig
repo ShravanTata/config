@@ -1,0 +1,13 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[pull]
+	rebase = false
+[user]
+	email = shravantr@gmail.com
+	name = Shravan Tata
+[core]
+	editor = emacs-nw
+	excludesfile = /Users/tatarama/.config/git/.gitignore
