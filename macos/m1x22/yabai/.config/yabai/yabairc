@@ -31,7 +31,7 @@ yabai -m config                                 \
     external_bar                 "all:0:0"      \
     debug_output                 off            \
     mouse_follows_focus          off            \
-    focus_follows_mouse          off            \
+    focus_follows_mouse          on             \
     mouse_modifier               fn             \
     mouse_action1                move           \
     mouse_action2                resize         \
@@ -50,7 +50,7 @@ yabai -m config                                 \
     insert_feedback_color        0xffd75f5f     \
     split_ratio                  0.50           \
     split_type                   auto           \
-    auto_balance                 off            \
+    auto_balance                 on             \
     top_padding                  00             \
     bottom_padding               00             \
     left_padding                 00             \
@@ -71,6 +71,10 @@ yabai -m rule --add app=".*" sub-layer=normal
 yabai -m rule --add app="^Thunderbird$" manage=on
 yabai -m rule --add app="^Emacs$" manage=off
 yabai -m rule --add app="^System Settings$" manage=off
+yabai -m rule --add app="^System Information$" manage=off
+yabai -m rule --add app="^System Preferences$" manage=off
+yabai -m rule --add title="Preferences$" manage=off
+yabai -m rule --add title="Settings$" manage=off
 yabai -m rule --add app="^Firefox$" manage=off
 yabai -m rule --add app="^Google Chrome$" manage=off
 yabai -m rule --add app="^Arc$" manage=off
