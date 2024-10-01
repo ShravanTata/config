@@ -28,6 +28,7 @@ yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 sudo yabai --load-sa
 
 yabai -m config                                 \
+    external_bar                 "all:0:0"      \
     debug_output                 off            \
     mouse_follows_focus          off            \
     focus_follows_mouse          off            \
@@ -89,6 +90,9 @@ yabai -m rule --add app="^Godot$" title=".*" manage=off
 
 # show digital colour meter topmost and on all spaces
 yabai -m rule --add app="^Digital Colou?r Meter$" sticky=on layer=above
+
+# For external bar
+yabai -m config external_bar all:40:0
 
 # Needed after changes in version 7.0.0
 yabai -m rule --apply
