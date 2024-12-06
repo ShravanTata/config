@@ -1,7 +1,14 @@
-import = ["/Users/tatarama/.config/alacritty/catppuccin/catppuccin-mocha.toml"]
+[cursor]
+blink_interval = 600
+unfocused_hollow = true
+thickness = 0.25
 
 [cursor.style]
-shape = "Underline"
+shape = "Beam"
+blinking= "Always"
+
+[mouse]
+hide_when_typing = true
 
 [env]
 TERM = "xterm-256color"
@@ -47,3 +54,7 @@ decorations_theme_variant = "Dark"
 opacity = 1.0
 startup_mode = "Maximized"
 title = "waveparticle"
+dynamic_title = false
+
+[general]
+import = ["/Users/tatarama/.config/alacritty/catppuccin/catppuccin-mocha.toml"]
