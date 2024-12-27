@@ -55,6 +55,7 @@ opacity = 1.0
 startup_mode = "Maximized"
 title = "waveparticle"
 dynamic_title = false
+option_as_alt = "Both"
 
 [general]
 import = ["/Users/tatarama/.config/alacritty/catppuccin/catppuccin-mocha.toml"]
