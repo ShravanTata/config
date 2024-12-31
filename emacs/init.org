@@ -109,32 +109,31 @@ Language Server Protocol Support for Emacs
 *** [[https://ai.meta.com/blog/code-llama-large-language-model-coding/]]
 *** http://doc.norang.ca/org-mode.html#StartupView
 *** https://yiufung.net/post/org-mode-hidden-gems-pt1/
-*** [[https://github.com/Lambda-Emacs/lambda-themes]]                       :themes:
+*** [[https://github.com/Lambda-Emacs/lambda-themes]]                     :themes:
 *** https://github.com/catppuccin/catppuccin/blob/main/docs/style-guide.md :colors:
-*** [[https://ogbe.net/emacs/emacs][https://ogbe.net/emacs/emacs]]                                        :config:
-*** [[https://github.com/karthink/popper]]                                 :package:
-*** [[https://github.com/Gavinok/emacs.d/blob/main/init.el]]                :config:
+*** [[https://ogbe.net/emacs/emacs][https://ogbe.net/emacs/emacs]]                                      :config:
+*** [[https://github.com/karthink/popper]]                               :package:
+*** [[https://github.com/Gavinok/emacs.d/blob/main/init.el]]              :config:
 https://www.youtube.com/watch?v=_14E7pDJJ_w
-*** https://robert.kra.hn/posts/2023-02-22-copilot-emacs-setup/        :feature:
+*** https://robert.kra.hn/posts/2023-02-22-copilot-emacs-setup/      :feature:
 *** https://protesilaos.com/codelog/2020-07-18-emacs-concept-org-tweaked-focus/
-*** [[https://github.com/emacs-tw/awesome-emacs]]                          :awesome:
+*** [[https://github.com/emacs-tw/awesome-emacs]]                        :awesome:
 *** https://www.flycheck.org/en/latest/languages.html
-*** [[https://github.com/minad/org-modern]]                                    :org:
-*** [[https://github.com/gopar/.emacs.d/blob/main/README.org#][https://github.com/gopar/.emacs.d/blob/main/README.org#]]             :config:
-*** [[https://emacstil.com/til/2022/03/05/setting-up-vale-prose-linter-on-emacs/][setting-up-vale-prose-linter-on-emacs/]]                               :prose:
+*** [[https://github.com/minad/org-modern]]                                  :org:
+*** [[https://github.com/gopar/.emacs.d/blob/main/README.org#][https://github.com/gopar/.emacs.d/blob/main/README.org#]]           :config:
+*** [[https://emacstil.com/til/2022/03/05/setting-up-vale-prose-linter-on-emacs/][setting-up-vale-prose-linter-on-emacs/]]                             :prose:
 *** [[https://xenodium.com/trying-out-gccemacs-on-macos/][trying-out-gccemacs-on-macos]]
-*** [[https://github.com/minad/jinx][minad/jinx]]                                                           :prose:
-*** [[https://github.com/SophieBosio/.emacs.d][https://github.com/SophieBosio/.emacs.d]]                             :config:
-*** [[https://github.com/io12/org-fragtog]]                                    :org:
-*** [[https://sophiebos.io/posts/beautifying-emacs-org-mode/][https://sophiebos.io/posts/beautifying-emacs-org-mode/]]                 :org:
-*** [[https://emacs.stackexchange.com/questions/53932/set-rpc-python-when-using-elpy-with-virtualenv][set-rpc-python-when-using-elpy-with-virtualenv]]                       :issue:
-*** [[https://github.com/jamescherti/minimal-emacs.d/tree/main][jamescherti/minimal-emacs.d]]                                         :config:
-*** [[https://rosepinetheme.com/][https://rosepinetheme.com/]]                                          :themes:
+*** [[https://github.com/minad/jinx][minad/jinx]]                                                         :prose:
+*** [[https://github.com/SophieBosio/.emacs.d][https://github.com/SophieBosio/.emacs.d]]                           :config:
+*** [[https://github.com/io12/org-fragtog]]                                  :org:
+*** [[https://sophiebos.io/posts/beautifying-emacs-org-mode/][https://sophiebos.io/posts/beautifying-emacs-org-mode/]]               :org:
+*** [[https://emacs.stackexchange.com/questions/53932/set-rpc-python-when-using-elpy-with-virtualenv][set-rpc-python-when-using-elpy-with-virtualenv]]                     :issue:
+*** [[https://github.com/jamescherti/minimal-emacs.d/tree/main][jamescherti/minimal-emacs.d]]                                       :config:
+*** [[https://rosepinetheme.com/][https://rosepinetheme.com/]]                                        :themes:
 *** [[https://www.masteringemacs.org/article/how-to-get-started-tree-sitter][how-to-get-started-tree-sitter]]
 *** [[https://gist.github.com/habamax/290cda0e0cdc6118eb9a06121b9bc0d7][Emacs, Python, Treesitter and Eglot]]
 *** https://docs.doomemacs.org/latest/                                  :config:
 *** [[https://github.com/Khaustoff/emacs_Khaustoff][Khaustoff/emacs_Khaustoff]]                                           :config:
-*** https://config.phundrak.com/emacs/                                  :config:
 ** Tips and Tricks
 *** ORG
 |-----------------------------+-----------+------------------------------------------------------------|
