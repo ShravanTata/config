@@ -1,0 +1,21 @@
+#    -*- mode: org -*-
+
+
+Archived entries from file /Users/tatarama/projects/personal/org/core/init.org
+
+
+* DONE Add encryption to notes in org mode
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-12-30 Mon 16:48
+:ARCHIVE_FILE: ~/projects/personal/org/core/init.org
+:ARCHIVE_OLPATH: Ducks/Tasks
+:ARCHIVE_CATEGORY: init
+:ARCHIVE_TODO: DONE
+:END:
+** https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key
+** https://vxlabs.com/2021/03/21/gnupg-pinentry-via-the-emacs-minibuffer/
+** https://dev.to/zemse/setup-gpg-on-macos-2iib
+** https://superuser.com/questions/1628782/gpg-signing-failed-no-pinentry
+** https://www.beorgapp.com/learning/emacs-encryption/
+** https://fluca1978.github.io/2021/09/16/Emacs_Org_Encrypt.html
+** https://www.masteringemacs.org/article/keeping-secrets-in-emacs-gnupg-auth-sources
