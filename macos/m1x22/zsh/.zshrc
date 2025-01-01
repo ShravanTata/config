@@ -146,6 +146,8 @@ source /Users/tatarama/.docker/init-zsh.sh || true # Added by Docker Desktop
 # USD
 export PATH=$PATH:$SOFTWARES/install/USD/bin
 export PYTHONPATH=$PYTHONPATH:$SOFTWARES/install/USD/lib/python
+# GLSL
+export PATH=$PATH:$SOFTWARES/install/glslViewer/bin
 
 # MOJO
 export MODULAR_HOME="/Users/tatarama/.modular"
