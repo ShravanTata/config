@@ -1,7 +1,16 @@
+;; -*- epa-file-encrypt-to: ("shravantr@gmail.com") -*-
+
 [general]
 search_limit = 7
 output_directory = "/Users/tatarama/Pictures/"
 
-[credentials]
-client_id = "9d9509064ace4124aa7a1ee9491d7e8b"
-client_secret = "298fcb3495f14b48be0f2c2cf1467620"
+-----BEGIN PGP MESSAGE-----
+
+hF4D2F4QtLTaudsSAQdAQ09dN8STcT3jbsAiVuSKsU5WbYUUsIlvFC4udofMXTMw
+fH63lM2GhlALPG/gSs9Ek4O1o3xZZaN9poSDSwOt/6aCYf4DS0vwrxGy8Ku2Ekpd
+1KgBCQIQAl9B5UsKBgG3F9imnH6TBMpPrlRPRkwOQpSbT0mgI8NEze3OMtXXis2H
+N72toxSCe+nDA/UT3CxTw/Iv8JicSeHXiAt9YbC3lNixsJooJTUvo3FMGRXcoY1G
+HHtU4fIXL0tx5BuG/ffauPdNdSackPE/HRZ8hcFMo0qiOhQqKCbUGq7NRROVS95U
+V0n0gxCvsaVvQFIqyH5/vosCCj/C3AK2r/g=
+=lBgW
+-----END PGP MESSAGE-----
