@@ -1895,32 +1895,23 @@ List of requirements are:
 Set python environment path
 
 #+begin_src emacs-lisp
-
-  (setenv "PYTHONPATH" (shell-command-to-string "$SHELL --login -c 'echo -n $PYTHONPATH'"))
-
+(setenv "PYTHONPATH" (shell-command-to-string "$SHELL --login -c 'echo -n $PYTHONPATH'"))
 #+end_src
 
 Setup elpy. In order to use all the features (such as navigation with
 M-.), you’ll need to install some python libraries:
 
 #+begin_src sh :tangle no
-
-  pip install flake8 snakeviz
-
-  # For linux
-
-  sudo apt install python3-jedi black python3-autopep8 yapf3 python3-yapf
-
-  # For mac
-
-  brew install python3-jedi black python3-autopep8 yapf3 python3-yapf
-
+pip install flake8 snakeviz
+# For linux
+sudo apt install python3-jedi black python3-autopep8 yapf3 python3-yapf
+# For mac
+brew install python3-jedi black python3-autopep8 yapf3 python3-yapf
 #+end_src
 
 Use snakeviz to profile code with `elpy-profile-buffer-or-region`
 
 #+begin_src emacs-lisp
-
 (require 'elpy)
 (with-eval-after-load 'elpy
   (delete 'elpy-module-yasnippet elpy-modules))
@@ -1940,7 +1931,6 @@ Use snakeviz to profile code with `elpy-profile-buffer-or-region`
 
 ;; remove highlight-indentation
 (setq elpy-modules (delq 'elpy-module-highlight-indentation elpy-modules))
-
 #+end_src
 
 Setup flycheck with elpy
@@ -2036,9 +2026,9 @@ Setup flycheck for cython mode
 Configure nxml mode
 
 #+begin_src emacs-lisp
-  ;; (add-hook 'nxml-mode-hook (lambda () (line-number-mode 0)))
-  ;; (add-hook 'nxml-mode-hook (lambda () (linum-mode 0)))
-  (add-hook 'nxml-mode-hook (lambda () (undo-tree-mode -1)))
+;; (add-hook 'nxml-mode-hook (lambda () (line-number-mode 0)))
+;; (add-hook 'nxml-mode-hook (lambda () (linum-mode 0)))
+(add-hook 'nxml-mode-hook (lambda () (undo-tree-mode -1)))
 #+end_src
 
 ** yaml
@@ -2743,6 +2733,7 @@ Writing and reading notes with org
 
 - https://github.com/weirdNox/org-noter
 - https://rgoswami.me/posts/org-note-workflow/#org-ref
+- https://zettelkasten.de/introduction/
 ** Exports
 
 Setup default list of exporters
