@@ -2653,13 +2653,14 @@ Have to downgrade to version 2.4.0 or below. Currently the easiest to do on MacO
 For documentation,
 - https://www.gnupg.org/documentation/manuals/gnupg24/gpg.1.html
 *** Resources
-**** https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key
+**** [[https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key][docs.github/generating-a-new-gpg-key]]
 **** https://vxlabs.com/2021/03/21/gnupg-pinentry-via-the-emacs-minibuffer/
 **** https://dev.to/zemse/setup-gpg-on-macos-2iib
 **** https://superuser.com/questions/1628782/gpg-signing-failed-no-pinentry
 **** https://www.beorgapp.com/learning/emacs-encryption/
 **** https://fluca1978.github.io/2021/09/16/Emacs_Org_Encrypt.html
 **** https://www.masteringemacs.org/article/keeping-secrets-in-emacs-gnupg-auth-sources
+**** http://yitang.uk/2023/12/28/gpg-in-emacs-first-step-towards-data-security/
 ** Templates
 
 #+begin_src emacs-lisp
@@ -2814,7 +2815,8 @@ and setup a keyboard shortcut (C-c c):
              )
       )
 #+end_src
-
+*** RESOURCES
+- [[https://slawomir-grochowski.com/posts/02-how-i-organize-my-life-in-org-mode-using-column-view.html][how-i-organize-my-life-in-org-mode-using-column-view]]
 ** Benchmark
 
 #+begin_src emacs-lisp
