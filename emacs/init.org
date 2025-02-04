@@ -1360,6 +1360,10 @@ whitespace-mode config
 (add-hook 'before-save-hook 'whitespace-cleanup)
 #+end_src
 
+#+begin_src emacs-lisp
+(require 'ospl-mode)
+#+end_src
+
 ** History
 
 Setup undo-tree
@@ -2071,9 +2075,6 @@ Add support for formatting latex text to one sentence per line with ospl mode.
 This helps tracking changes easier and better.
 
 #+begin_src emacs-lisp
-(require 'ospl-mode)
-
-(add-hook 'LaTeX-mode-hook #'ospl-mode)
 (add-hook 'org-mode-hook #'ospl-mode)
 #+end_src
 
@@ -2368,13 +2369,14 @@ Powerthesaurus
 #+begin_src emacs-lisp
 
 #+end_src
-
+** Markdown
+#+begin_src emacs-lisp
+(add-hook 'markdown-mode-hook #'ospl-mode)
+#+end_src
 ** Benchmark
 
 #+begin_src emacs-lisp
-
 (rougier/report-time "Writing")
-
 #+end_src
 * AI
 :PROPERTIES:
@@ -2552,6 +2554,10 @@ Fix for missing unicode symbol in org-modern
 
 #+begin_src emacs-lisp
 (add-hook 'org-mode-hook 'olivetti-mode)
+#+end_src
+
+#+begin_src emacs-lisp
+(add-hook 'org-mode-hook #'ospl-mode)
 #+end_src
 
 ** Key bindings
