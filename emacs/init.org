@@ -1546,25 +1546,19 @@ For the [[help:consult-goto-line][consult-goto-line]] and ~consult-line~ command
 
 (bind-key "M-g g"   #'rougier/consult-goto-line)
 (bind-key "M-g M-g" #'rougier/consult-goto-line)
-
 #+end_src
 
 Extra packages for consult projects
 
 #+begin_src emacs-lisp :tangle no
-
-  (require 'consult-project-extra)
-
+(require 'consult-project-extra)
 #+end_src
 
 Enable binding with projectile ([[https://github.com/icostan/emacs.d/blob/4ccf3897db29f101384ad47cdc25c9f27b881b4d/init/project-management.el][project-management]])
 
 #+begin_src emacs-lisp :tangle no
-
-  (require 'consult-projectile)
-
-  (consult projectile)
-
+(require 'consult-projectile)
+(consult projectile)
 #+end_src
 
 ** Vertico
