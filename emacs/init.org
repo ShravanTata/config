@@ -2575,7 +2575,7 @@ Org mode specific keybindings
 
 ;; Set default GPG key to use for encryption
 ;; Replace with your key ID from gpg --list-secret-keys
-(setq org-crypt-key "Shravan Tata Ramalingasetty")
+(setq org-crypt-key "shravantr@gmail.com")
 
 ;; Disable backup files for encrypted .org files
 (setq backup-directory-alist
@@ -2645,6 +2645,8 @@ For documentation,
 **** https://fluca1978.github.io/2021/09/16/Emacs_Org_Encrypt.html
 **** https://www.masteringemacs.org/article/keeping-secrets-in-emacs-gnupg-auth-sources
 **** http://yitang.uk/2023/12/28/gpg-in-emacs-first-step-towards-data-security/
+**** Useful commands
+- gpg-connect-agent reloadagent /bye
 ** Templates
 
 #+begin_src emacs-lisp
