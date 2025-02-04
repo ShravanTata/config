@@ -22,7 +22,7 @@ Make sure this file is not named `init.org` as org-babel will generate a *.el* f
    (expand-file-name "/Users/tatarama/projects/personal/org/core/init.org"))
 
 #+end_src
-** Tasks [5/33]
+** Tasks [5/34]
 *** TODO LSP mode for programming
 **** servers
 ***** https://github.com/clangd/clangd
@@ -82,6 +82,8 @@ https://github.com/godotengine/emacs-gdscript-moed
 *** TODO Setup a journaling system in ORG
 **** [[https://blog.fixermark.com/posts/2024/recreating-the-cortex-theme-journal-in-emacs-org-mode/][recreating-the-cortex-theme-journal-in-emacs-org-mode]]
 **** https://www.youtube.com/watch?v=fSwpe8r50_o
+*** TODO Look into symbol-overlay and fix multiple-cursors
+**** https://lmno.lol/alvaro/its-all-up-for-grabs-and-it-compounds
 ** Ideas
 ** Resources
 *** https://tecosaur.github.io/emacs-config/config.html#rudimentary-configuration
@@ -697,9 +699,7 @@ Local function definitions to facilitate emacs setup
 :header-args: :tangle yes
 :END:
 #+begin_src emacs-lisp
-
 (setq rougier/section-start-time (current-time))
-
 #+end_src
 ** Frame
 
@@ -850,41 +850,34 @@ Mouse active in tty mode.
 
 Disable the bell (auditory or visual).
 
-#+begin_src emacs-lisp
-
+#+begin_src emacs-lisp :tangle no
 (setq-default visible-bell nil             ; No visual bell
               ring-bell-function 'ignore)  ; No bell
-
 #+end_src
 ** Scroll
 
 Smoother scrolling
 
 #+begin_src emacs-lisp
-  (pixel-scroll-precision-mode)
+(pixel-scroll-precision-mode)
 #+end_src
 
 #+begin_src emacs-lisp
-
-  (setq-default scroll-conservatively 101       ; Avoid recentering when scrolling far
-                scroll-margin 2                 ; Add a margin when scrolling vertically
-                recenter-positions '(5 bottom)) ; Set re-centering positions
-
+(setq-default scroll-conservatively 101       ; Avoid recentering when scrolling far
+              scroll-margin 2                 ; Add a margin when scrolling vertically
+              recenter-positions '(5 bottom)) ; Set re-centering positions
 #+end_src
 ** Clipboard
 
 Allows system and Emacs clipboard to communicate smoothly (both ways)
 
 #+begin_src emacs-lisp
-
 (setq-default select-enable-clipboard t) ; Merge system's and Emacs' clipboard
-
 #+end_src
 
 Make sure clipboard works properly in tty mode on OSX.
 
 #+begin_src emacs-lisp
-
 (defun my/paste-from-osx ()
   (shell-command-to-string "pbpaste"))
 
@@ -898,7 +891,6 @@ Make sure clipboard works properly in tty mode on OSX.
            (eq system-type 'darwin))
   (setq interprogram-cut-function   #'my/copy-to-osx
         interprogram-paste-function #'my/paste-from-osx))
-
 #+end_src
 ** Help
 
@@ -906,7 +898,6 @@ Make sure clipboard works properly in tty mode on OSX.
 It is a bit slow to load so we do need load it explicitly.
 
 #+begin_src emacs-lisp
-
 (setq help-window-select t)             ; Focus new help windows when opened
 
 (bind-key "C-h f"   #'helpful-callable) ; Look up callable
@@ -915,35 +906,34 @@ It is a bit slow to load so we do need load it explicitly.
 (bind-key "C-c C-d" #'helpful-at-point) ; Look up the current symbol at point
 (bind-key "C-h F"   #'helpful-function) ; Look up *F*unctions (excludes macros).
 (bind-key "C-h C"   #'helpful-command)  ; Look up *C*ommands.
-
 #+end_src
 ** Widgets
 
 #+begin_src emacs-lisp
-  ;; No ugly button for checkboxes
-  (setq widget-image-enable nil)
+;; No ugly button for checkboxes
+(setq widget-image-enable nil)
 #+end_src
 ** Text
 
 Shorten confirmation inputs
 #+begin_src emacs-lisp
-  (setq-default
-   use-short-answers t                    ; Replace yes/no prompts with y/n
-   confirm-nonexistent-file-or-buffer nil ; Ok to visit non existent files
-   )
+(setq-default
+ use-short-answers t                    ; Replace yes/no prompts with y/n
+ confirm-nonexistent-file-or-buffer nil ; Ok to visit non existent files
+ )
 #+end_src
 
 Replace text when writing over a region
 #+begin_src emacs-lisp
-  ;; overwrite selected text
-  (delete-selection-mode t)
+;; overwrite selected text
+(delete-selection-mode t)
 #+end_src
 
 Some other defaults
 
 #+begin_src emacs-lisp
-  ;; Double-spaces after periods is morally wrong.
-  (setq sentence-end-double-space nil)
+;; Double-spaces after periods is morally wrong.
+(setq sentence-end-double-space nil)
 #+end_src
 
 ** Typography
@@ -953,50 +943,45 @@ Some other defaults
 - Nicer and cleaner ellipsis
 
 #+begin_src emacs-lisp
-
-  (setq-default
-   fill-column 88                          ; Default line width increased by 8 chars
-   sentence-end-double-space nil           ; Use a single space after dots
-   bidi-paragraph-direction 'left-to-right ; Faster
-   truncate-string-ellipsis "…"            ; Nicer ellipsis
-   )
+(setq-default
+ fill-column 88                          ; Default line width increased by 8 chars
+ sentence-end-double-space nil           ; Use a single space after dots
+ bidi-paragraph-direction 'left-to-right ; Faster
+ truncate-string-ellipsis "…"            ; Nicer ellipsis
+ )
 
 #+end_src
 
 #+begin_src emacs-lisp
-  ;; Nicer glyphs for continuation and wrap
+;; Nicer glyphs for continuation and wrap
 
-  (defface my-wrap-symbol-face
-    '((t (:family "JetBrains Mono"
-                  :weight light)))
-    "Specific face for wrap symbol")
+(defface my-wrap-symbol-face
+  '((t (:family "JetBrains Mono"
+                :weight light)))
+  "Specific face for wrap symbol")
 
-  (set-display-table-slot standard-display-table
-                          'truncation (make-glyph-code ?… 'my-wrap-symbol-face))
+(set-display-table-slot standard-display-table
+                        'truncation (make-glyph-code ?… 'my-wrap-symbol-face))
 
-  (set-display-table-slot standard-display-table
-                          'wrap (make-glyph-code ?↩ 'my-wrap-symbol-face))
+(set-display-table-slot standard-display-table
+                        'wrap (make-glyph-code ?↩ 'my-wrap-symbol-face))
 #+end_src
 
 Fix a bug on OSX in term mode & zsh (spurious "%" after each command)
 
 #+begin_src emacs-lisp
-
-  (when (eq system-type 'darwin)
+(when (eq system-type 'darwin)
     (add-hook 'term-mode-hook
               (lambda ()
                 (setq buffer-display-table (make-display-table)))))
-
 #+end_src
 
 Make sure underline is positionned at the very bottom.
 
 #+begin_src emacs-lisp
-
-  (setq x-underline-at-descent-line nil
+(setq x-underline-at-descent-line nil
         x-use-underline-position-properties t
         underline-minimum-offset 10)
-
 #+end_src
 ** Project
 
@@ -1506,9 +1491,7 @@ For retina display (OSX)
 :header-args: :tangle yes
 :END:
 #+begin_src emacs-lisp
-
 (setq rougier/section-start-time (current-time))
-
 #+end_src
 ** General
 
@@ -1523,7 +1506,6 @@ Display time in modeline
 We replace some of emacs functions with their consult equivalent
 
 #+begin_src emacs-lisp
-
 (require 'consult)
 
 (setq consult-preview-key nil) ; No live preview
@@ -1533,14 +1515,12 @@ We replace some of emacs functions with their consult equivalent
 (bind-key "C-x b"   #'consult-buffer)
 (bind-key "C-c h"   #'consult-history)
 ;; (bind-key "M-:"     #'consult-complex-command)
-
 #+end_src
 
 For the [[help:consult-goto-line][consult-goto-line]] and ~consult-line~ commands, we define our owns with live preview (independently of the [[help:consult-preview-key][consult-preview-key]])
 
 #+name: rougier/consult-line
 #+begin_src emacs-lisp
-
 (defun rougier/consult-line ()
   "Consult line with live preview"
 
@@ -1550,11 +1530,9 @@ For the [[help:consult-goto-line][consult-goto-line]] and ~consult-line~ command
     (consult-line)))
 
 (bind-key "C-s" #'rougier/consult-line)
-
 #+end_src
 #+name: rougier/consult-goto-line
 #+begin_src emacs-lisp
-
 (defun rougier/consult-goto-line ()
   "Consult goto line with live preview"
 
