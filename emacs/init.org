@@ -487,6 +487,8 @@ List all the packages that are required to be installed for the current configur
         gptel                           ; AI LLM interface for emacs
         ;; fun
         xkcd                            ; xkcd config
+        ;; versioning
+        llama                           ; requirement for magit
         )
       )
 
@@ -2294,7 +2296,7 @@ Powerthesaurus
 :PROPERTIES:
 :header-args: :tangle yes
 :END:
-** GPTShell
+** GPTel
 #+begin_src emacs-lisp
 ;; Use Ollama models instead of ChatGPT
 ;; OPTIONAL configuration
@@ -2305,6 +2307,10 @@ Powerthesaurus
                  :stream t
                  :models '("deepseek-coder:6.7b")))
 #+end_src
+** RESOURCES
+*** https://github.com/captainflasmr/ollama-buddy
+A friendly Emacs interface for interacting with Ollama models.
+This package provides a convenient way to integrate Ollama’s local LLM capabilities directly into your Emacs workflow with little or no configuration required.
 * Org
 :PROPERTIES:
 :header-args: :tangle yes
@@ -3124,11 +3130,14 @@ Configure ediff
 Set keybindings for magit
 
 #+begin_src emacs-lisp
+(require 'llama)
+#+end_src
+
+#+begin_src emacs-lisp
 ;; Taken from prelude
 ;; Magit creates some global keybindings by default
 ;; but it's a nice to complement them with this one
 (global-set-key (kbd "C-c g") 'magit-file-dispatch)
-
 (global-set-key (kbd "C-=") 'er/expand-region)
 #+end_src
 
