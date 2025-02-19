@@ -2210,7 +2210,7 @@ Langtool
 ;; (add-hook 'org-mode-hook #'flycheck-languagetool-setup)
 ;; (add-hook 'org-mode-hook 'waveparticle/langtool-autosave-hook)
 ;; (add-hook 'text-mode-hook 'waveparticle/langtool-autosave-hook)
-(add-hook 'LaTeX-mode-hook 'waveparticle/langtool-autosave-hook)
+;; (add-hook 'LaTeX-mode-hook 'waveparticle/langtool-autosave-hook)
 #+end_src
 
 Proselint : Requires system installation first
