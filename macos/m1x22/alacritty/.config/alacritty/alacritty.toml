@@ -50,7 +50,7 @@ key = "C"
 mods = "Command"
 
 [window]
-decorations_theme_variant = "Dark"
+decorations_theme_variant = "Light"
 opacity = 1.0
 startup_mode = "Maximized"
 title = "waveparticle"
@@ -58,4 +58,4 @@ dynamic_title = false
 option_as_alt = "Both"
 
 [general]
-import = ["/Users/tatarama/.config/alacritty/catppuccin/catppuccin-mocha.toml"]
+import = ["/Users/tatarama/.config/alacritty/catppuccin/catppuccin-latte.toml"]
