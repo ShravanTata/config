@@ -1143,37 +1143,12 @@ Add a splash screen image and welcome message with some stats
 :header-args: :tangle no
 :END:
 
-A consistent theme for GNU Emacs.
-The light theme is based on Material colors and the dark theme is based on Nord colors.
-The theme is based on a set of six faces (only)
-
-#+begin_src lisp
-
-(require 'nano-theme)
-(setq nano-fonts-use nil) ; Use theme font stack
-;; (nano-light)            ; Use theme light version
-(nano-mode)             ; Recommended settings
-
-
-(defun my/set-face (face style)
-  "Reset FACE and make it inherit STYLE."
-  (set-face-attribute face nil
-                      :foreground 'unspecified :background 'unspecified
-                      :family     'unspecified :slant      'unspecified
-                      :weight     'unspecified :height     'unspecified
-                      :underline  'unspecified :overline   'unspecified
-                      :box        'unspecified :inherit    style))
-(my/set-face 'italic 'default)
-
-#+end_src
-
-** Theme
+** Themes
 *** Catppuccin
 :PROPERTIES:
 :header-args: :tangle no
 :END:
 #+begin_src emacs-lisp
-
 (load-theme 'catppuccin :no-confirm)
 (setq catppuccin-flavor 'latte);; or 'latte, 'macchiato, or 'mocha or 'frappe
 
