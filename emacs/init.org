@@ -22,7 +22,7 @@ Make sure this file is not named `init.org` as org-babel will generate a *.el* f
    (expand-file-name "/Users/tatarama/projects/personal/org/core/init.org"))
 
 #+end_src
-** Tasks [5/34]
+** Tasks [5/35]
 *** TODO LSP mode for programming
 **** servers
 ***** https://github.com/clangd/clangd
@@ -84,6 +84,9 @@ https://github.com/godotengine/emacs-gdscript-moed
 **** https://www.youtube.com/watch?v=fSwpe8r50_o
 *** TODO Look into symbol-overlay and fix multiple-cursors
 **** https://lmno.lol/alvaro/its-all-up-for-grabs-and-it-compounds
+*** TODO Look into  improving TRAMP performance
+**** https://www.gnu.org/software/tramp/#Connection-types
+*** TODO Check out [[https://github.com/jkitchin/scimax?tab=readme-ov-file][jkitchin/scimax]]
 ** Ideas
 ** Resources
 *** https://tecosaur.github.io/emacs-config/config.html#rudimentary-configuration
@@ -136,6 +139,7 @@ https://www.youtube.com/watch?v=_14E7pDJJ_w
 *** [[https://gist.github.com/habamax/290cda0e0cdc6118eb9a06121b9bc0d7][Emacs, Python, Treesitter and Eglot]]
 *** https://docs.doomemacs.org/latest/                                  :config:
 *** [[https://github.com/Khaustoff/emacs_Khaustoff][Khaustoff/emacs_Khaustoff]]                                           :config:
+*** [[https://github.com/jkitchin/scimax?tab=readme-ov-file][jkitchin/scimax]]
 ** Tips and Tricks
 *** ORG
 |-----------------------------+-----------+------------------------------------------------------------|
