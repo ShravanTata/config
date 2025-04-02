@@ -763,7 +763,6 @@ Pop up windows are needed for `display-buffer` to able to split window. For exam
 magit to create a new window for writing the commit message.
 
 #+begin_src emacs-lisp
-(menu-bar-mode -1)                       ; remove menu bar
 (tool-bar-mode -1)                      ; remove tool bar
 (scroll-bar-mode -1)                    ; remove scroll bar
 (tooltip-mode -1)                       ; remove tooltips
@@ -775,13 +774,10 @@ magit to create a new window for writing the commit message.
 )
 #+end_src
 
-Specific case for OSX since menubar is desktop-wide (see
-[[https://emacs.stackexchange.com/questions/28121/osx-switching-to-virtual-desktop-doesnt-focus-emacs][emacs.stackexchange.com/questions/28121]]) and [[https://bitbucket.org/mituharu/emacs-mac/src/892fa7b2501a403b4f0aea8152df9d60d63f391a/doc/emacs/macport.texi?at=master#macport.texi-529][emacs-mac documentation]].
+Specific case for OSX since menubar is desktop-wide (see [[https://emacs.stackexchange.com/questions/28121/osx-switching-to-virtual-desktop-doesnt-focus-emacs][emacs.stackexchange.com/questions/28121]]) and [[https://bitbucket.org/mituharu/emacs-mac/src/892fa7b2501a403b4f0aea8152df9d60d63f391a/doc/emacs/macport.texi?at=master#macport.texi-529][emacs-mac documentation]].
 
 #+begin_src emacs-lisp
-
 (menu-bar-mode 1)
-
 #+end_src
 ** Key bindings
 
