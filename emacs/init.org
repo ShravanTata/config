@@ -1993,7 +1993,7 @@ Add support for formatting latex text to one sentence per line with ospl mode.
 This helps tracking changes easier and better.
 
 #+begin_src emacs-lisp
-(add-hook 'org-mode-hook #'ospl-mode)
+(add-hook 'LaTeX-mode-hook 'ospl-mode)
 #+end_src
 
 #+begin_src emacs-lisp
@@ -2478,7 +2478,7 @@ Fix for missing unicode symbol in org-modern
 #+end_src
 
 #+begin_src emacs-lisp
-(add-hook 'org-mode-hook #'ospl-mode)
+(add-hook 'org-mode-hook 'ospl-mode)
 #+end_src
 
 ** Key bindings
