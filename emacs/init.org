@@ -22,7 +22,7 @@ Make sure this file is not named `init.org` as org-babel will generate a *.el* f
    (expand-file-name "/Users/tatarama/projects/personal/org/core/init.org"))
 
 #+end_src
-** Tasks [5/35]
+** Tasks [5/37]
 *** TODO LSP mode for programming
 **** servers
 ***** https://github.com/clangd/clangd
@@ -79,6 +79,7 @@ https://github.com/godotengine/emacs-gdscript-moed
 *** TODO Setup a good GTD system
 **** https://todoist.com/productivity-methods/getting-things-done
 **** https://doc.norang.ca/org-mode.html#ClockEverythingWithNewTasks
+**** https://www.howardism.org/Technical/Emacs/getting-boxes-done.html
 *** TODO Setup a journaling system in ORG
 **** [[https://blog.fixermark.com/posts/2024/recreating-the-cortex-theme-journal-in-emacs-org-mode/][recreating-the-cortex-theme-journal-in-emacs-org-mode]]
 **** https://www.youtube.com/watch?v=fSwpe8r50_o
@@ -87,6 +88,9 @@ https://github.com/godotengine/emacs-gdscript-moed
 *** TODO Look into  improving TRAMP performance
 **** https://www.gnu.org/software/tramp/#Connection-types
 *** TODO Check out [[https://github.com/jkitchin/scimax?tab=readme-ov-file][jkitchin/scimax]]
+*** TODO Test and setup difftastic with magit
+**** https://shivjm.blog/better-magit-diffs/
+**** https://tsdh.org/posts/2022-08-01-difftastic-diffing-with-magit.html
 ** Ideas
 ** Resources
 *** https://tecosaur.github.io/emacs-config/config.html#rudimentary-configuration
