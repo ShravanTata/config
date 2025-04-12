@@ -446,6 +446,7 @@ List all the packages that are required to be installed for the current configur
         ;; powerthesaurus                  ; Finding synonyms, antonyms, and related terms
         ;; programming
         ;; general
+        ;; lsp-mode
         guess-language                  ; Robust automatic language detection
         rainbow-delimiters              ; Adds colors to delimiters
         yasnippet                       ; yet another snippet
@@ -1242,6 +1243,18 @@ Visual line mode for prog and text modes
 #+begin_src emacs-lisp
 (add-hook 'text-mode-hook 'visual-line-mode)
 (add-hook 'prog-mode-hook 'visual-line-mode)
+#+end_src
+** Tree-sitter
+#+begin_src emacs-lisp :tangle no
+(setq major-mode-remap-alist
+ '((python-mode . python-ts-mode)))
+
+;; (yaml-mode . yaml-ts-mode)
+;;    (bash-mode . bash-ts-mode)
+;;    (js2-mode . js-ts-mode)
+;;    (typescript-mode . typescript-ts-mode)
+;;    (json-mode . json-ts-mode)
+;;    (css-mode . css-ts-mode)
 #+end_src
 ** Text
 
