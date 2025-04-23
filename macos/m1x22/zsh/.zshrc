@@ -76,13 +76,15 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 # WELCOME PROMPT
-figlet -f ~/fork/figlet-fonts/3d.flf "TATA"
-distro=$(uname)
-if [[ "$distro" == 'Darwin' ]]; then
-    screenfetch -D "MacOSX"
-elif [ "$distro" = 'Linux' ]; then
-    screenfetch -D "Linux-gnu"
-fi
+# figlet -f ~/fork/figlet-fonts/3d.flf "TATA"
+# distro=$(uname)
+# if [[ "$distro" == 'Darwin' ]]; then
+#     screenfetch -D "MacOSX"
+# elif [ "$distro" = 'Linux' ]; then
+#     screenfetch -D "Linux-gnu"
+# fi
+#pokemon
+pokemon-colorscripts --random | fastfetch --file-raw -
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
