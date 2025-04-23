@@ -22,7 +22,7 @@ Make sure this file is not named `init.org` as org-babel will generate a *.el* f
    (expand-file-name "/Users/tatarama/projects/personal/org/core/init.org"))
 
 #+end_src
-** Tasks [5/37]
+** Tasks [5/38]
 *** TODO LSP mode for programming
 **** servers
 ***** https://github.com/clangd/clangd
@@ -91,6 +91,7 @@ https://github.com/godotengine/emacs-gdscript-moed
 *** TODO Test and setup difftastic with magit
 **** https://shivjm.blog/better-magit-diffs/
 **** https://tsdh.org/posts/2022-08-01-difftastic-diffing-with-magit.html
+*** TODO Try Aider
 ** Ideas
 ** Resources
 *** https://tecosaur.github.io/emacs-config/config.html#rudimentary-configuration
@@ -492,7 +493,7 @@ List all the packages that are required to be installed for the current configur
         mode-icons                      ; Icons for filetypes in modeline
         exec-path-from-shell		    ; Reflect system paths in Emacs
         ;; whisper                      ; Speech to text
-        ;; LLM
+        ;; AI
         gptel                           ; AI LLM interface for emacs
         ;; fun
         xkcd                            ; xkcd config
@@ -535,6 +536,9 @@ List all the packages that are required to be installed for the current configur
 
 (straight-use-package
  '(pinerose-emacs :type git :host github :repo "konrad1977/pinerose-emacs"))
+
+(straight-use-package
+ '(aider :type git :host github :repo "tninja/aider.el"))
 #+end_src
 
 ** Customization
@@ -1330,7 +1334,7 @@ Setup undo-tree
 
 #+begin_src emacs-lisp
 (global-undo-tree-mode)
-;; (setq undo-tree-limit 240000)
+(setq undo-tree-limit 240000)
 
 ;; Prevent undo tree files from polluting your git repo
 (setq undo-tree-history-directory-alist '(("." . "~/.emacs.d/undo")))
