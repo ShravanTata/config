@@ -618,8 +618,8 @@ We save every possible history we can think of.
 #+begin_src emacs-lisp
 (require 'savehist)
 
-(setq kill-ring-max 50
-      history-length 50)
+;; (setq kill-ring-max 50
+;;       history-length 50)
 
 (setq savehist-additional-variables
       '(kill-ring
