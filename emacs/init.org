@@ -145,6 +145,8 @@ https://www.youtube.com/watch?v=_14E7pDJJ_w
 *** https://docs.doomemacs.org/latest/                                  :config:
 *** [[https://github.com/Khaustoff/emacs_Khaustoff][Khaustoff/emacs_Khaustoff]]                                           :config:
 *** [[https://github.com/jkitchin/scimax?tab=readme-ov-file][jkitchin/scimax]]
+*** [[https://oleksii.shmalko.com/2020/literate-config/][oleksii.shmalko/2020/literate-config/]]                               :config:
+*** [[https://config.phundrak.com/emacs/][https://config.phundrak.com/emacs/]]                                  :config:
 ** Tips and Tricks
 *** ORG
 |-----------------------------+-----------+------------------------------------------------------------|
@@ -2780,6 +2782,8 @@ and setup a keyboard shortcut (C-c c):
 #+begin_src emacs-lisp
 (rougier/report-time "Org")
 #+end_src
+** Resources
+*** https://karl-voit.at/2020/05/03/current-org-files/
 * Agenda
 :PROPERTIES:
 :header-args: :tangle no
