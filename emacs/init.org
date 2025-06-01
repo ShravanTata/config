@@ -539,6 +539,9 @@ List all the packages that are required to be installed for the current configur
 
 (straight-use-package
  '(aider :type git :host github :repo "tninja/aider.el"))
+
+(straight-use-package
+ '(ligature :type git :host github :repo "mickeynp/ligature.el"))
 #+end_src
 
 ** Customization
@@ -1189,6 +1192,37 @@ Add a splash screen image and welcome message with some stats
 (setq x-underline-at-descent-line nil
       x-use-underline-position-properties t
       underline-minimum-offset 10)
+#+end_src
+*** Ligatures
+#+begin_src emacs-lisp
+;; Ligature Configuration
+(require 'ligature)
+
+;; Ligature settings
+(ligature-set-ligatures 't '("www"))
+
+;; Enable traditional typography ligatures in text modes
+(ligature-set-ligatures '(eww-mode org-mode elfeed-show-mode)
+                        '("ff" "fi" "ffi"))
+
+;; Enable all Cascadia Code ligatures in programming modes
+(ligature-set-ligatures 'prog-mode
+                        '("|||>" "<|||" "<==>" "<!--" "####" "~~>" "***" "||=" "||>"
+                          ":::" "::=" "=:=" "===" "==>" "=!=" "=>>" "=<<" "=/=" "!=="
+                          "!!." ">=>" ">>=" ">>>" ">>-" ">->" "->>" "-->" "---" "-<<"
+                          "<~~" "<~>" "<*>" "<||" "<|>" "<$>" "<==" "<=>" "<=<" "<->"
+                          "<--" "<-<" "<<=" "<<-" "<<<" "<+>" "</>" "###" "#_(" "..<"
+                          "..." "+++" "/==" "///" "_|_" "www" "&&" "^=" "~~" "~@" "~="
+                          "~>" "~-" "**" "*>" "*/" "||" "|}" "|]" "|=" "|>" "|-" "{|"
+                          "[|" "]#" "::" ":=" ":>" ":<" "$>" "==" "=>" "!=" "!!" ">:"
+                          ">=" ">>" ">-" "-~" "-|" "->" "--" "-<" "<~" "<*" "<|" "<:"
+                          "<$" "<=" "<>" "<-" "<<" "<+" "</" "#{" "#[" "#:" "#=" "#!"
+                          "##" "#(" "#?" "#_" "%%" ".=" ".-" ".." ".?" "+>" "++" "?:"
+                          "?=" "?." "??" ";;" "/*" "/=" "/>" "//" "__" "~~" "(*" "*)"
+                          "\\\\" "://"))
+
+;; Enable ligature mode globally
+(global-ligature-mode t)
 #+end_src
 ** Fancy icons
 
