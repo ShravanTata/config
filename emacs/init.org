@@ -1016,6 +1016,7 @@ Disable projectile when using tramp to speed things
 
 Setup projecticle to automatically discover projects
 #+begin_src emacs-lisp :tangle no
+(setq projectile-auto-discover nil)
 (add-hook 'after-init-hook #'(lambda () (projectile-discover-projects-in-directory "~/projects" 7)))
 #+end_src
 
@@ -1044,7 +1045,7 @@ Configure dired
 
 (when (eq system-type 'darwin)
   (setq insert-directory-program "gls" dired-use-ls-dired t)
-  (setq dired-listing-switches "-al --group-directories-first")
+  (setq dired-listing-switches "-alFh --group-directories-first")
  )
 
 (when (eq system-type 'gnu/linux)
@@ -1123,7 +1124,7 @@ This is the font stack we install:
 (set-face-attribute 'default nil
                     :family "JetBrains Mono"
                     :weight 'regular
-                    :height 128)
+                    :height 134)
 
 (set-face-attribute 'bold nil
                     :family "JetBrains Mono"
@@ -3169,19 +3170,14 @@ We install a time to refresh the daily agenda (a) at regular intervals such that
 ** Git
 
 #+begin_src emacs-lisp
-
-  (require 'git-gutter)
-
-  (global-git-gutter-mode +1)
-
+(require 'git-gutter)
+(global-git-gutter-mode +1)
 #+end_src
 
 Configure ediff
 
 #+begin_src emacs-lisp
-
-  (setq ediff-window-setup-function 'ediff-setup-windows-plain)
-
+(setq ediff-window-setup-function 'ediff-setup-windows-plain)
 #+end_src
 
 ** Magit
